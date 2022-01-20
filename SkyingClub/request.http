@@ -1,0 +1,58 @@
+POST http://localhost:8686/login
+Content-Type: application/json
+
+{
+    "username": "123admin@gmail.com",
+    "password": "123"
+}
+
+###
+
+POST http://localhost:5000/api/prodType
+Content-Type: application/json
+
+{
+    "title" :"Giii45a",
+    "trademark": "ADIDAS",
+    "sex": "NAM",
+    "ordering" : 1
+}
+###
+GET http://localhost:5000/api/prodType
+
+###
+GET http://localhost:5000/api/products
+
+
+###
+DELETE http://localhost:5000/api/prodType/61e44d986ae6048ddf1bbb94
+
+###
+POST  http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "title": "aaa",
+	"description": "dep",
+    "quantily": 10,
+    "image": "",
+    "importPrice": 10000,
+    "salePrice": 130000
+}
+
+###
+
+PUT http://localhost:5000/api/products/61e467e89524105e755f72aa
+Content-Type: application/json
+
+{
+  "title": "aaaaa",
+	"description": "dep",
+    "quantily": 10,
+    "image": "aaa",
+    "importPrice": 10000,
+    "salePrice": 130000
+}
+
+###
+DELETE http://localhost:5000/api/products/61e51f6ff0dc27a3343224f8
